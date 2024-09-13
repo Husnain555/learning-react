@@ -5,12 +5,18 @@ export function High (){
         <div>
             <h1>HOC</h1>
             <HOC cmp={Counter()}/>
+            <HOC1 cmp={Counter()}/>
         </div>
 
     )
 }
 
 function HOC (props){
+    return (
+        <h2>{props.cmp}</h2>
+    )
+}
+function HOC1 (props){
     return (
         <h2>{props.cmp}</h2>
     )
