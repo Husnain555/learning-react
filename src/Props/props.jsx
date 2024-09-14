@@ -32,3 +32,13 @@
 //         </div>
 //     )
 // }
+import {useContext} from "react";
+import {Props} from "../Contaxt-api/c";
+
+export function Zamna11(){
+    const Zaman = useContext(Props)
+
+    return (
+        <div>Hello bhi {Zaman}</div>
+    )
+}

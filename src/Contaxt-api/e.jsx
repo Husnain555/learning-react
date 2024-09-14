@@ -1,18 +1,9 @@
-import {ContextConsumer} from "./context";
-import {D} from './d'
-export function E (){
-    return (
-        <userConsumer>
-<ContextConsumer>
-    {
-        (user)=> {
-              return (
-                  <div>Hello {user}</div>
+import {useContext} from "react";
+import {brother} from "./c";
 
-              )
-        }
-    }
-</ContextConsumer>
-        </userConsumer>
+export function E (){
+    const Brother = useContext(brother)
+    return (
+        <div>Hello iam from e {Brother} </div>
     )
 }

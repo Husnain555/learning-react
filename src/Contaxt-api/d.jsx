@@ -1,22 +1,11 @@
-import C from './c'
-import {E} from "./e";
-import {ContextConsumer} from "./context";
+import { User} from "./c";
+import {useContext} from "react";
+
 export function D (){
+    const UseName = useContext(User);
     return (
         <div>
-            <ContextConsumer>
-                {
-                    (name)=>{
-                        return (
-                            <div>
-                                hello i'm from d {name}
-                            </div>
-                        )
-                    }
-                }
-            </ContextConsumer>
-            <E/>
-
+            {UseName}
         </div>
     )
 }

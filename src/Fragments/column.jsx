@@ -2,10 +2,10 @@ import {Fragment} from "react";
 
 export function Column (){
     return (
-            <Fragment>
+        <>
                 <td>Husnain</td>
                 <td>babar</td>
-            </Fragment>
+</>
     )
 }
 
